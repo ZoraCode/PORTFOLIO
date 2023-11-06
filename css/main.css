@@ -1,17 +1,10 @@
-h1{
-  font-size: 90px;
-  text-align: center;
+header{
   text-transform: uppercase;
-  padding: 60px;
 }
 
-body{
-  background: #ECF0F3;
+.tm h2{
+  font-size: 90px;
 }
-
-.profile .box1{
-
-}
-.profile .text{
-
+.tm h3{
+  font-size: 70px;
 }
