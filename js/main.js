@@ -35,3 +35,25 @@ let skill = $('.skill_list li'),
       $(this).addClass('active');
     });
 
+
+
+    const skillSwiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      autoplay: {
+        delay: 3000,
+      },
+      direction: 'horizontal',
+      loop: true,
+    
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });  
+    
+    $('.swiper-button-prev').click(function(){
+      skillSwiper.slidePrev();
+    });
+    $('.swiper-button-next').click(function(){
+      skillSwiper.slideNext();
+    }); 
+  
