@@ -5,7 +5,7 @@ headerList.click(function(e){
   e.preventDefault();
 
   let idx = $(this).index(),
-      offset = secList.eq(idx+0).offset().top ;
+      offset = secList.eq(idx+0).offset().top;
   $('body,html').animate({
     scrollTop:offset
   });
@@ -73,10 +73,6 @@ let skill = $('.skill_list li'),
       skillSwiper.slideNext();
     }); 
   
-
-
-
-
 // let images = document.querySelectorAll('.design img');
   
 // for (var i = 0; i < images.length; i++) {
@@ -93,3 +89,38 @@ let skill = $('.skill_list li'),
 //     this.style.margin = '40px'
 //   });
 // }
+
+
+let topBtn = document.querySelector(".top_btn");
+
+  window.addEventListener("scroll",(e)=>{
+    e.preventDefault();
+
+    let btnOST = window.scrollY || document.documentElement.scrollTop;
+    if (btnOST > 500) {
+      topBtn.classList.add("active");
+    } else {
+      topBtn.classList.remove("active");
+    }
+    topBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      $("html, body").stop().animate(
+        {scrollTop: 0,});
+    });
+  });
+
+
+
+let myswitch = false;
+
+$(window).scroll(function(){
+  let sct = $(this).scrollTop();
+
+  if(sct >= skill.offset().top-500){
+    if(!myswitch){
+      skill.eq(0).trigger('click');
+      skills.eq(0).trigger('click');
+      myswitch=true;
+    }
+  }
+});

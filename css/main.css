@@ -31,7 +31,7 @@ header ul li a{
   text-align: right;
 }
 .profile{
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
 }
 .profile .pom{
   gap: calc(var(--padding)*3);
@@ -148,7 +148,7 @@ header ul li a{
 }
 .bar1,
 .bar2{
-  background-color: aqua;
+  background-color: #A2B4C1;
   margin-right: calc(var(--padding)*1);
 }
 .web{
@@ -159,7 +159,6 @@ header ul li a{
 }
 
 .web h2{
-  /* position: absolute; */
   text-align: right;
   font-size: 100px;
   color: var(--white);
@@ -192,7 +191,8 @@ header ul li a{
   background-color: black;
   opacity: 0;
 } */
-.web .image a:hover::after{
+
+.web .image .a:hover::after{
   content: '';
   position: absolute;
   top: 0; bottom: 0;
@@ -200,6 +200,10 @@ header ul li a{
   background-color: var(--black);
   opacity: .2;
   border-radius: 10px;
+}
+.web .image .in:hover{
+  font-weight: bold;
+
 }
 .web .work{
   height: 200px;
@@ -269,7 +273,6 @@ display: none;
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  color: #ffeead;
 }
 
 .design .container > div > img {
@@ -297,6 +300,21 @@ display: none;
 .design .big {
   grid-column:span 2;
   grid-row:span 2;
+}
+
+.top_btn{
+  position: fixed;
+  right: 3%;
+  bottom: 8%;
+  z-index: 10;
+  transition: .5s;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+.top_btn.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 

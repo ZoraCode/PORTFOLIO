@@ -28,6 +28,7 @@
   --dark:  #59606d;
   --dipdark: #3a3c44;
   --green: #4868AD;
+  --purple: #817CFF;
 }
 .white {
   color: var(--white);
@@ -43,6 +44,9 @@
 }
 .green{
   color: var(--green);
+}
+.purple{
+  color: var(--purple);
 }
 /* Font */
 .ft1 {
