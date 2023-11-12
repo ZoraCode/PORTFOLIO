@@ -1,3 +1,19 @@
+let headerList = $('.header li'),
+    secList = $('main section');
+
+headerList.click(function(e){
+  e.preventDefault();
+
+  let idx = $(this).index(),
+      offset = secList.eq(idx+0).offset().top ;
+  $('body,html').animate({
+    scrollTop:offset
+  });
+});
+
+
+
+
 let skill = $('.skill_list li'),
     skills = $('.skill_lists li'),
     barMovie = $('.program .bar_wrap'),
@@ -40,7 +56,7 @@ let skill = $('.skill_list li'),
     const skillSwiper = new Swiper('.swiper', {
       slidesPerView: 3,
       autoplay: {
-        delay: 3000,
+        delay: 7000,
       },
       direction: 'horizontal',
       loop: true,
@@ -57,3 +73,23 @@ let skill = $('.skill_list li'),
       skillSwiper.slideNext();
     }); 
   
+
+
+
+
+// let images = document.querySelectorAll('.design img');
+  
+// for (var i = 0; i < images.length; i++) {
+//   images[i].addEventListener('click', function() {
+//     for (var j = 0; j < images.length; j++) {
+//       if (i != j) {
+//         images[j].style.transform = 'scale(1)';
+//         images[j].style.zindex = '1';
+//       }else{
+//         images[j].style.transform = 'scale(1)';
+//       }
+//     }
+//     this.style.transform = 'scale(1.3)';
+//     this.style.margin = '40px'
+//   });
+// }

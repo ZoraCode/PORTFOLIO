@@ -25,7 +25,9 @@
   /* color */
   --white: #ffffff;
   --black: #000000;
-  --green:  rgba(0, 131, 114, 0.824);
+  --dark:  #59606d;
+  --dipdark: #3a3c44;
+  --green: #4868AD;
 }
 .white {
   color: var(--white);
@@ -33,22 +35,28 @@
 .black {
   color: var(--black);
 }
+.dark{
+  color: var(--dark);
+}
+.dipdark{
+  color: var(--dipdark);
+}
 .green{
   color: var(--green);
 }
 /* Font */
 .ft1 {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: normal;
   line-height: calc(var(--padding)*2);
 }
 .ft2 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: normal;
   line-height: 2rem;
 }
 .ft3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: normal;
   line-height: 2rem;
 }
