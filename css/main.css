@@ -333,3 +333,13 @@ display: none;
 .contact i{
   margin-right: 10px;
 }
+
+@media screen and (max-width:1000px){
+
+}
+@media screen and (max-width:768px){
+
+}
+@media screen and (max-width:400px){
+
+}
