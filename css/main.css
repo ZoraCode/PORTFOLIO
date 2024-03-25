@@ -316,7 +316,10 @@ display: none;
   opacity: 1;
   visibility: visible;
 }
-
+.ft4.pd{
+  font-size: 26px;
+  padding: 10px 0 30px 0;
+}
 
 
 
